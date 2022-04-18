@@ -1,0 +1,37 @@
+*{
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: normal;
+}
+body{
+    padding: 0;
+    margin: 0;
+    background-color: rgb(65, 65, 65);
+}
+.container{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120px,auto) repeat(5,100px);
+}
+
+button{
+    font-size: 2rem;
+    border: 1px solid rgb(53, 53, 53);
+    background-color: aquamarine;
+}
+
+.botao2{
+    grid-column: span 2;
+}
+
+.display{
+    color: white;
+    grid-column: 1/-1;
+    background-color: rgba(83, 83, 83, 0.89);
+    display: flex;
+    align-items: center;
+    font-size: 45px;
+    justify-content: center;
+}
